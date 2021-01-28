@@ -1,7 +1,7 @@
 # KittieCat
 
 ## Vanilla JS E-Commerce project
-- Mini project using only vanila javascript, without libraries and frameworka
+- Mini project using only vanila javascript, without libraries and frameworks
 
 ### 1. Getting Started
 
