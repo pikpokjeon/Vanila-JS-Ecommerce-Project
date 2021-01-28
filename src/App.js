@@ -3,18 +3,18 @@ console.log("app is running!");
 class App {
   $target = null;
   data = [];
+  d = null
 
   constructor($target) {
     this.$target = $target;
 
-    this.header = new Header({$target})
-    this.slidemenu = new SlideMenu({$target,
-      data: {
-        visible:false
-      }
-    })
+    this.header = new Header({$target,data:this.d})
+    this.slidemenu = new SlideMenu({$target,data: this.d})
 
     this.subheader = new SubHeader({$target})
+
+    this.mainlist = new MainList({$target})
+
     this.searchInput = new SearchInput({
       $target,
       onSearch: keyword => {
@@ -45,6 +45,7 @@ class App {
   setState(nextData) {
     console.log(this);
     this.data = nextData;
+    this.d = nextData
     this.searchResult.setState(nextData);
   }
 }

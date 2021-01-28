@@ -66,7 +66,6 @@
 
 }
 .sideMenu {
-
 }
 .sideMenu> button {
     border: 0;
@@ -75,26 +74,54 @@
 }
 
 .slideTabs {
-    height: 25vh;
+    /* height: 100vh; */
+    height: 100vh;
     text-align: center;
     width: 100%;
     background-color: #f0f0f0;
-    display: grid;
-    grid-template-columns: repeat(35px, 4);
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(35px, 4); */
     align-items: center;
     cursor: pointer;
     font-size: 22px;
+    overflow-y: auto; 
+}
+.side-Tab{
+  width: 100%;
 }
 .slideTabs > div:hover {
-    transition: 300ms linear;
+    /* transition: 300ms linear; */
     font-weight: 100;
     font-size: 24px;
     padding-bottom: 15px;
     border-bottom: 1px solid #4f4f4f;
-    margin: 0 20%;
+    /* margin: 0 20%; */
 }
+.show {
+  visibility: visible !important;
+  display: flex !important;
+  flex-wrap: wrap;
+}
+.shadow {
+  box-shadow: 45px 3px 49px 4100vh #00000063;
+}
+/* .show-list {
+  visibility: visible !important;
+} */
+.slidesubmenu {
+  list-style: none;
+  visibility: hidden;
+  display: none;
+  width: 100%;
+  padding: 0;
+}
+.slidesubmenu > li {
+  width: 100%;
 
+}
 .slideMenu {
+    visibility: hidden;
     position: absolute;
     width: 30%;
     height: 100vh;
