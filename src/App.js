@@ -13,14 +13,17 @@ class App {
 
     this.subheader = new SubHeader({$target})
 
-    this.mainlist = new MainList({$target})
-
+ 
     this.searchInput = new SearchInput({
       $target,
       onSearch: keyword => {
         api.fetchCats(keyword).then(({ data }) => this.setState(data));
       }
     });
+    this.mainlist = new MainList({$target,
+      data : this.data
+  })
+
 
     this.searchResult = new SearchResult({
       $target,

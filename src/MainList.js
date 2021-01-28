@@ -3,12 +3,12 @@ class MainList {
     data = null;
     onClick = null;
   
-    constructor({ $target, initialData, onClick }) {
+    constructor({ $target, data, onClick }) {
       this.$MainList = document.createElement("div");
       this.$MainList.className = "MainList";
       $target.appendChild(this.$MainList);
   
-      this.data = initialData;
+      this.data = data;
       this.onClick = onClick;
   
       this.render();
@@ -23,7 +23,7 @@ class MainList {
       this.$MainList.innerHTML = this.data
         .map(
           cat => `
-            <div class="item">
+            <div class="itembox">
               <img src=${cat.url} alt=${cat.name} />
             </div>
           `
