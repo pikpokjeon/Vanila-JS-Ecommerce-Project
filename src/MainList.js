@@ -31,7 +31,6 @@ class MainList {
   async render() {
     const a = await this.initData
     console.log(a)
-    document.addEventListener("click", (e) => {
     // const data = JSON.parse(this.$target)
 
       if (a.length > 0) {
@@ -52,7 +51,6 @@ class MainList {
 
       }
 
-    })
     
   }
 }
