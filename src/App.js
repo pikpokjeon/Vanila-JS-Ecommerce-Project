@@ -35,16 +35,23 @@ class App {
       $target,
       // setMainState:  initData => this.mainlist.setMainState(initData),
       setMainState: (data) => { this.mainData = data },
-      onClick: initData => this.mainlist.setMainState(fetchMainData),
+      onClick: (image,isClick,idx) => {
+        this.imageInfo.setState({
+          visible: isClick,
+          image,
+          idx:idx
+        });
+      },
       initData: fetchMainData(),
     })
     this.searchResult = new SearchResult({
       $target,
       initialData: this.data,
-      onClick: image => {
+      onClick: (image,isClick,idx) => {
         this.imageInfo.setState({
-          visible: true,
-          image
+          visible: isClick,
+          image,
+          idx:idx
         });
       }
     });
