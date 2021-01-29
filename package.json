@@ -1,8 +1,8 @@
 {
-  "name": "fe-assignment-lab-frontend",
+  "name": "Vanila-JS-Ecommerce-Project",
   "private": true,
   "version": "1.0.0",
-  "description": "This repository was created by Emily for Roto, Jeffrey and Lucas.",
+  "description": "This project is for studying vanila javascript to build a complete webapp without any libraries or frameworks",
   "main": "index.html",
   "scripts": {
     "test": "jest --config=jest.config.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/learn-programmers/fe-assignment-lab.git"
+    "url": "git+https://github.com/pikpokjeon/Vanila-JS-Ecommerce-Project.git"
   },
   "keywords": [
     "programmers",
@@ -20,9 +20,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/learn-programmers/fe-assignment-lab/issues"
+    "url": "https://github.com/pikpokjeon/Vanila-JS-Ecommerce-Project"
   },
-  "homepage": "https://github.com/learn-programmers/test-zone#readme",
+  "homepage": "https://pikpokjeon.github.io/",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.8.3",
