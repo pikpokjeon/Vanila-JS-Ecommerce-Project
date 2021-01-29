@@ -134,6 +134,17 @@
     z-index: 1;
 }
 
+.MainList {
+    width: 909px;
+    margin-top: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(218px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    top: 160px;
+}
+
 
 
   .SearchResult {
